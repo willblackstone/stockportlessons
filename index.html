@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stockport Music Lessons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="logo">
-      <h1>Stockport Music Lessons</h1>
-      <p>Drums &bull; Brass &bull; Jazz &bull; Cello</p>
+      <h1><a href="index.html">Stockport Music Lessons</a></h1>
+      <p>Drums &bull; Brass &bull; Jazz &bull; Cello &bull; Piano</p>
     </div>
     <nav>
       <a href="index.html" class="active">Home</a>
@@ -18,16 +21,21 @@
       <a href="brass.html">Brass</a>
       <a href="jazz.html">Jazz Improvisation</a>
       <a href="cello.html">Cello</a>
+      <a href="piano.html">Piano</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
+    <!-- HERO: one warm headline + 1-2 sentences. See CONTENT-GUIDE.md -->
     <section class="hero">
-      <h2>Music Lessons in Stockport</h2>
+      <h2>Friendly music lessons, <em>right here in Stockport</em></h2>
       <p>We offer friendly, professional tuition for all ages and abilities — from complete beginners to advanced players looking to take their playing further.</p>
       <a href="contact.html" class="btn">Get in Touch</a>
     </section>
+
+    <h2 class="section-title">What we teach</h2>
+    <p class="section-intro">One-to-one lessons, tailored to you.</p>
 
     <section class="lessons-grid">
       <a href="drums.html" class="card">
@@ -50,11 +58,44 @@
         <h3>Cello</h3>
         <p>Classical cello lessons for all levels, with a warm, encouraging approach.</p>
       </a>
+      <a href="piano.html" class="card">
+        <div class="card-icon">🎹</div>
+        <h3>Piano</h3>
+        <p>Piano lessons for all levels, with a warm, encouraging approach.</p>
+      </a>
+    </section>
+
+    <!-- TEACHERS: replace each .photo-placeholder div's contents with
+         <img src="photos/your-photo.jpg" alt="Your Name"> when you have photos -->
+    <h2 class="section-title">Meet your teachers</h2>
+    <p class="section-intro">Lessons are taught by us — a husband-and-wife team of working musicians.</p>
+
+    <section class="teachers-grid">
+      <div class="teacher-card">
+        <div class="photo-placeholder">
+          <img src="photos/will.jpeg" alt="Will" onerror="this.remove()">
+          <span class="cam">📷</span>
+          <span>Photo of Will</span>
+        </div>
+        <h3>Will</h3>
+        <p class="role">Drums &bull; Brass &bull; Jazz</p>
+        <p class="bio">Short friendly bio goes here — who you are, what you play, where you've played, and what lessons with you are like.</p>
+      </div>
+      <div class="teacher-card">
+        <div class="photo-placeholder">
+          <img src="photos/rose.jpeg" alt="Rose" onerror="this.remove()">
+          <span class="cam">📷</span>
+          <span>Photo of Rose</span>
+        </div>
+        <h3>Rose</h3>
+        <p class="role">Cello &bull; Piano</p>
+        <p class="bio">Short friendly bio goes here — who you are, what you play, where you've played, and what lessons with you are like.</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Stockport Music Lessons &bull; <a href="contact.html">Contact us</a></p>
+    <p>&copy; 2026 Stockport Music Lessons &bull; <a href="contact.html">Contact us</a> &bull; <a href="students/index.html">Student login</a></p>
   </footer>
 </body>
 </html>
